@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Panthera Athletic Club | Petrolia, Ontario</title>
+  <meta name="description"
+    content="Get in touch with Panthera Athletic Club in Petrolia, Ontario. Questions about membership, coaching, or partnerships? We'd love to hear from you.">
+  <link rel="icon" href="Images/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Oswald:wght@400;500;600;700&family=Rajdhani:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo">
+        <img src="Images/logo.png" alt="Panthera Athletic Club Logo" loading="eager">
+        <span>PANTHERA AC</span>
+      </a>
+      <div class="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="membership.html">Membership</a>
+        <a href="coaches.html">Coaches</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="navbar-cta">
+        <a href="membership.html" class="btn btn-primary btn-sm">JOIN NOW</a>
+      </div>
+      <button class="navbar-hamburger" id="navHamburger" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="membership.html">Membership</a>
+    <a href="coaches.html">Coaches</a>
+    <a href="contact.html">Contact</a>
+    <a href="membership.html" class="btn btn-primary" style="margin-top:1rem;">JOIN NOW</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-watermark"><img src="Images/logo.png" alt=""></div>
+    <div class="container" data-animate>
+      <h1 class="display-lg">GET IN TOUCH</h1>
+      <div class="gold-divider-center"></div>
+      <p class="text-muted body-lg" style="margin-top:0.75rem;">Questions? Ready to join? We'd love to hear from you.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT LAYOUT -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Left: Info Block -->
+        <div class="contact-info-block" data-animate="fade-left">
+          <div class="contact-monogram">P</div>
+
+          <div class="contact-info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Location</h4>
+              <p>4497 Progress Dr, Petrolia, Ontario, N0N 1R0</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:info@panthera.ca">info@panthera.ca</a></p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h4>Phone</h4>
+              <p><a href="tel:+15193126973">(519) 312-6973</a></p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <h4>Hours</h4>
+              <p>Mon – Fri: 9AM – 9PM<br>Sat – Sun: 10AM – 6PM</p>
+            </div>
+          </div>
+
+          <div class="contact-socials">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <!-- Right: Contact Form -->
+        <div class="contact-form-card" data-animate="fade-right">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="fullName">Full Name</label>
+              <input type="text" id="fullName" name="fullName" placeholder="Your full name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number <span
+                  style="color:var(--white-muted); font-weight:400; text-transform:none; letter-spacing:0;"></span></label>
+              <input type="tel" id="phone" name="phone" placeholder="(519) 312-6973" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject" required>
+                <option value="" disabled selected>Select a topic</option>
+                <option value="general">General Inquiry</option>
+                <option value="membership">Membership Question</option>
+                <option value="coaching">Coaching</option>
+                <option value="partnership">Partnership</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell us what's on your mind..."
+                required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit-btn" style="width:100%;">SEND MESSAGE</button>
+          </form>
+
+          <div class="form-success">
+            <i class="fas fa-check-circle"></i>
+            <p>Thanks! We'll get back to you soon.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GOOGLE MAPS -->
+  <section class="section map-section" style="padding-top:0;">
+    <div class="container" data-animate>
+      <iframe src="https://www.google.com/maps?q=4497+Progress+Dr,+Petrolia,+ON+N0N+1R0,+Canada&output=embed"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        title="Panthera Athletic Club — 4497 Progress Dr, Petrolia, Ontario">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- FAQ QUICK LINKS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="heading-lg">QUICK ANSWERS</h2>
+        <div class="gold-divider-center"></div>
+      </div>
+      <div class="quick-faq-grid">
+        <div class="quick-faq-card" data-animate data-delay="1">
+          <h4>Where are you located?</h4>
+          <p>We're based in Petrolia, Ontario, Canada — in a purpose-built indoor multi-sport facility.</p>
+        </div>
+        <div class="quick-faq-card" data-animate data-delay="2">
+          <h4>How do I get started?</h4>
+          <p>Choose a <a href="membership.html" style="color:var(--gold-primary);">membership plan</a> above or fill out
+            the contact form and we'll guide you.</p>
+        </div>
+        <div class="quick-faq-card" data-animate data-delay="3">
+          <h4>Do you offer trials?</h4>
+          <p>Contact us to discuss trial sessions and see if Panthera is right for you!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-brand-logo">
+          <img src="Images/logo.png" alt="Panthera AC Logo">
+          <span>PANTHERA AC</span>
+        </div>
+        <p class="footer-tagline">"Where Champions Are Forged"</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-heading">Quick Links</h4>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="membership.html">Membership</a>
+          <a href="coaches.html">Coaches</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-heading">Contact</h4>
+        <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>4497 Progress Dr, Petrolia, ON N0N
+            1R0</span>
+        </div>
+        <div class="footer-contact-item"><i class="fas fa-envelope"></i><span>info@panthera.ca</span></div>
+        <div class="footer-contact-item"><i class="fas fa-phone"></i><span>(519) 312-6973</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Panthera Athletic Club. All Rights Reserved. | Petrolia, Ontario</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/membership.js"></script>
+</body>
+
+</html>
